@@ -1,0 +1,26 @@
+.plaatje{
+    height: 300px;
+    width: 400px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-gap: 1em;
+    justify-items: center;
+}
+
+section{
+    width: 400px;
+    height: 400px;
+}
+
+h1{
+    grid-column: 1/-1;
+}
+
+footer{
+    background-color: grey;
+    height: 100px;
+}
+
