@@ -4,13 +4,22 @@ $(document).ready(function(){
 
     //mouse events
 
-    $('.plaatje').mouseenter(function(){
-        $(this).fadeTo(600, .01);
-    }).mouseleave(function(){
-        $(this).fadeTo(1000, 1);
-    }).click(function(){
-        $(this).next().toggle(700);
-    });
+    // $('.plaatje').mouseenter(function(){
+    //     $(this).fadeTo(600, .01);
+    // }).mouseleave(function(){
+    //     $(this).fadeTo(1000, 1);
+    // }).click(function(){
+    //     $(this).next().toggle(700);
+    // });
+
+    $( document.body ).click(function () {
+        if ( $( ".plaatje" ).first().is( ":hidden" ) ) {
+          $( ".plaatje" ).slideDown( "slow" );
+        } else {
+          $( ".plaatje" ).hide();
+        }
+      });
+
 
 
     // footer
